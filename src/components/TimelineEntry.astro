@@ -7,7 +7,12 @@ interface Props {
 const { date, current = false } = Astro.props;
 ---
 
-<div class:list={["timeline-entry", current && "before:bg-[#6f9bc9]!"]}>
+<div
+  class:list={[
+    "timeline-entry relative pl-8 before:absolute before:top-[0.35rem] before:left-[0.2rem] before:h-[0.65rem] before:w-[0.65rem] before:rounded-full before:border-2 before:border-[#6f9bc9] before:bg-slate-50 sm:grid sm:grid-cols-[9rem_1fr] sm:gap-8 sm:pl-0 sm:before:left-[9.7rem]",
+    current && "before:bg-[#6f9bc9]!"
+  ]}
+>
   <p class="text-sm font-semibold text-slate-500">{date}</p>
   <p class="font-semibold text-slate-900">
     <slot />
