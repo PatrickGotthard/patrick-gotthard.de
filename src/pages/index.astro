@@ -1,11 +1,12 @@
 ---
+import "../styles/global.css";
+
 import Skill from "../components/Skill.astro";
 import SkillBox from "../components/SkillBox.astro";
 import ContactButton from "../components/ContactButton.astro";
 import ExternalLink from "../components/ExternalLink.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import TimelineEntry from "../components/TimelineEntry.astro";
-import "../styles/global.css";
 ---
 
 <html lang="de" class="scroll-smooth">
@@ -14,11 +15,8 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Patrick Gotthard - Softwareentwickler</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body
     class="min-h-screen overflow-x-hidden bg-slate-50 font-['Source_Sans_3',sans-serif] text-slate-900 [&_*:focus-visible]:outline-3 [&_*:focus-visible]:outline-offset-3 [&_*:focus-visible]:outline-[#6f9bc9] [&_h1]:font-['Outfit',sans-serif] [&_h2]:font-['Outfit',sans-serif] [&_h3]:font-['Outfit',sans-serif]"
