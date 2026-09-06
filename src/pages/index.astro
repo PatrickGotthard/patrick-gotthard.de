@@ -19,26 +19,21 @@ import TimelineEntry from "../components/TimelineEntry.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <body class="min-h-screen overflow-x-hidden bg-slate-50 font-sans text-slate-900">
-    <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-20">
+  <body class="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
+    <main class="mx-auto flex max-w-3xl flex-col justify-center px-6 py-20">
       <!-- Intro -->
-      <section class="relative order-1 pb-16">
-        <h1 class="animate-fade-in-up animate-duration-1000 mt-12 font-['Outfit',sans-serif] text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-          Patrick Gotthard
-        </h1>
-        <h2 class="animate-fade-in-up animate-duration-1000 animate-delay-250 mt-4 font-['Outfit',sans-serif] text-2xl font-semibold sm:text-3xl">
-          Softwareentwickler
-        </h2>
-        <p class="animate-fade-in-up animate-duration-1000 animate-delay-500 mt-8 max-w-2xl text-lg leading-8">
-          Moin moin! Ich heiße Patrick Gotthard und wurde am 20. Mai 1988 in Kiel geboren. Seit Mitte der 90er beschäftige ich mich mit Computern, angefangen
-          mit MS-DOS 6.0, und habe mir im Laufe der Jahre ein umfangreiches Wissen in dem Bereich angeeignet. Mittlerweile liegt mein Schwerpunkt bei der
-          Softwareentwicklung.
+      <section class="relative pb-16">
+        <h1 class="animate-fade-in-up mt-12 font-['Outfit',sans-serif] text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
+        <h2 class="animate-fade-in-up animate-delay-150 mt-4 font-['Outfit',sans-serif] text-2xl font-semibold sm:text-3xl">Softwareentwickler</h2>
+        <p class="animate-fade-in-up animate-delay-300 mt-8 leading-8">
+          Moin moin! Ich heiße Patrick Gotthard und wurde am 20. Mai 1988 in Kiel geboren. Seit Mitte der 90er beschäftige ich mich mit Computern und habe mir
+          im Laufe der Jahre ein umfangreiches Wissen in dem Bereich angeeignet. Mittlerweile liegt mein Schwerpunkt bei der Softwareentwicklung.
         </p>
         <Divider />
       </section>
 
       <!-- Skills -->
-      <section id="skills" class="relative order-3 py-16">
+      <section class="relative py-16">
         <SectionTitle title="Skills" />
 
         <div class="mt-6 space-y-5">
@@ -56,14 +51,13 @@ import TimelineEntry from "../components/TimelineEntry.astro";
           <!-- Technologien -->
           <SkillBox title="Technologien">
             <Skill icon="/icons/skills/spring.svg">Spring</Skill>
-            <Skill icon="/icons/skills/tailwindcss.svg">Tailwind CSS</Skill>
+            <Skill icon="/icons/skills/springboot.svg">Spring Boot</Skill>
+            <Skill icon="/icons/skills/maven.svg">Maven</Skill>
+            <Skill icon="/icons/skills/nodejs.svg">Node.js</Skill>
             <Skill icon="/icons/skills/svelte.svg">Svelte</Skill>
             <Skill icon="/icons/skills/vuejs.svg">Vue.js</Skill>
-            <Skill icon="/icons/skills/nodejs.svg">Node.js</Skill>
-            <Skill icon="/icons/skills/maven.svg">Maven</Skill>
+            <Skill icon="/icons/skills/tailwindcss.svg">Tailwind CSS</Skill>
             <Skill icon="/icons/skills/git.svg">Git</Skill>
-            <Skill icon="/icons/skills/springboot.svg">Spring Boot</Skill>
-            <Skill icon="/icons/skills/thymeleaf.svg">Thymeleaf</Skill>
             <Skill icon="/icons/skills/docker.svg">Docker</Skill>
           </SkillBox>
 
@@ -75,44 +69,29 @@ import TimelineEntry from "../components/TimelineEntry.astro";
             <Skill icon="/icons/skills/mongodb.svg">MongoDB</Skill>
           </SkillBox>
 
-          <!-- AWS -->
-          <SkillBox title="AWS">
-            <Skill icon="/icons/skills/serverless.svg">Serverless Framework</Skill>
-            <Skill icon="/icons/skills/amazonaws.svg">CDK</Skill>
-            <Skill icon="/icons/skills/aws-ecs.svg">ECS</Skill>
-            <Skill icon="/icons/skills/aws-sns.svg">SNS</Skill>
-            <Skill icon="/icons/skills/aws-sqs.svg">SQS</Skill>
-            <Skill icon="/icons/skills/aws-cloudformation.svg">CloudFormation</Skill>
-            <Skill icon="/icons/skills/aws-cloudwatch.svg">CloudWatch</Skill>
-            <Skill icon="/icons/skills/aws-lambda.svg">Lambda</Skill>
-            <Skill icon="/icons/skills/aws-iam.svg">IAM</Skill>
-            <Skill icon="/icons/skills/aws-s3.svg">S3</Skill>
-          </SkillBox>
-
-          <!-- GCP -->
-          <SkillBox title="GCP">
+          <!-- Cloud -->
+          <SkillBox title="Cloud">
+            <Skill icon="/icons/skills/amazonaws.svg">AWS</Skill>
             <Skill icon="/icons/skills/googlecloud.svg">GCP</Skill>
-            <Skill icon="/icons/skills/terraform.svg">Terraform</Skill>
-          </SkillBox>
-
-          <!-- Kubernetes -->
-          <SkillBox title="Kubernetes">
             <Skill icon="/icons/skills/kubernetes.svg">Kubernetes</Skill>
+            <Skill icon="/icons/skills/amazonaws.svg">CDK</Skill>
+            <Skill icon="/icons/skills/terraform.svg">Terraform</Skill>
+            <Skill icon="/icons/skills/serverless.svg">Serverless Framework</Skill>
           </SkillBox>
 
           <!-- Tools -->
           <SkillBox title="Tools">
             <Skill icon="/icons/skills/spring.svg">Spring Tool Suite</Skill>
             <Skill icon="/icons/skills/vscode.svg">VSCode</Skill>
-            <Skill icon="/icons/skills/postman.svg">Postman</Skill>
-            <Skill icon="/icons/skills/apachejmeter.svg">Apache JMeter</Skill>
-            <Skill icon="/icons/skills/chrome.svg">Google Chrome</Skill>
-            <Skill icon="/icons/skills/heidisql.ico">HeidiSQL</Skill>
             <Skill icon="/icons/skills/notepadplusplus.svg">Notepad++</Skill>
-            <Skill icon="/icons/skills/putty.svg">PuTTY</Skill>
+            <Skill icon="/icons/skills/heidisql.ico">HeidiSQL</Skill>
             <Skill icon="/icons/skills/studio3t.svg">Studio 3T</Skill>
             <Skill icon="/icons/skills/datagrip.svg">DataGrip</Skill>
+            <Skill icon="/icons/skills/postman.svg">Postman</Skill>
+            <Skill icon="/icons/skills/apachejmeter.svg">Apache JMeter</Skill>
+            <Skill icon="/icons/skills/putty.svg">PuTTY</Skill>
             <Skill icon="/icons/skills/winscp.ico">WinSCP</Skill>
+            <Skill icon="/icons/skills/chrome.svg">Google Chrome</Skill>
           </SkillBox>
 
           <!-- Betriebssysteme -->
@@ -123,18 +102,20 @@ import TimelineEntry from "../components/TimelineEntry.astro";
           </SkillBox>
 
           <!-- Sonstiges -->
-          <SkillBox title="Sonstiges">
-            <Skill icon="/icons/skills/fastapi.svg">REST</Skill>
-            <Skill icon="/icons/skills/sonarqube.svg">Clean Code</Skill>
-            <Skill icon="/icons/skills/git.svg">Git</Skill>
-          </SkillBox>
+          <!--
+            <SkillBox title="Sonstiges">
+              <Skill icon="/icons/skills/fastapi.svg">REST</Skill>
+              <Skill icon="/icons/skills/sonarqube.svg">Clean Code</Skill>
+              <Skill icon="/icons/skills/git.svg">Git</Skill>
+            </SkillBox>
+          -->
         </div>
         <Divider />
       </section>
 
       <!-- Laufbahn -->
-      <section id="laufbahn" class="relative order-4 py-16">
-        <SectionTitle title="Laufbahn" />
+      <section class="relative py-16">
+        <SectionTitle title="Lebenslauf" />
 
         <div class="relative mt-8 space-y-8 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-slate-300 sm:before:left-40">
           <!-- Grundschule -->
@@ -184,7 +165,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
       </section>
 
       <!-- Kontakt -->
-      <section id="kontakt" class="order-5 pt-16">
+      <section class="pt-16">
         <SectionTitle title="Kontakt" />
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
           <ContactButton href="https://github.com/PatrickGotthard" icon="/icons/github.svg" label="GitHub" external />
