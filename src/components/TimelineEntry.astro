@@ -1,0 +1,15 @@
+---
+interface Props {
+  date: string;
+  current?: boolean;
+}
+
+const { date, current = false } = Astro.props;
+---
+
+<div class:list={["timeline-entry", current && "before:bg-[#6f9bc9]!"]}>
+  <p class="text-sm font-semibold text-slate-500">{date}</p>
+  <p class="font-semibold text-slate-900">
+    <slot />
+  </p>
+</div>
