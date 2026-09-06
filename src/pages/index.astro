@@ -1,4 +1,6 @@
 ---
+import Skill from "../components/Skill.astro";
+import SkillBox from "../components/SkillBox.astro";
 import "../styles/global.css";
 ---
 
@@ -50,340 +52,91 @@ import "../styles/global.css";
 
         <div class="mt-6 space-y-5">
           <!-- Sprachen -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Sprachen</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" />
-                  Java
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" />
-                  TypeScript
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
-                  JavaScript
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" />
-                  Python
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" />
-                  PHP
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
-                  HTML
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />
-                  CSS
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Sprachen">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">Java</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">TypeScript</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">JavaScript</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">Python</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">PHP</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">HTML</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">CSS</Skill>
+          </SkillBox>
 
           <!-- Technologien -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Technologien</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="" />
-                  Spring
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" />
-                  Tailwind CSS
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/svelte" alt="" />
-                  Svelte
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="" />
-                  Vue.js
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" />
-                  Node.js
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="" />
-                  Maven
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />
-                  Git
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/simple-icons:springboot.svg" alt="" />
-                  Spring Boot
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/thymeleaf" alt="" />
-                  Thymeleaf
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" />
-                  Docker
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Technologien">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">Spring</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg">Tailwind CSS</Skill>
+            <Skill icon="https://cdn.simpleicons.org/svelte">Svelte</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg">Vue.js</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">Node.js</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg">Maven</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">Git</Skill>
+            <Skill icon="https://api.iconify.design/simple-icons:springboot.svg">Spring Boot</Skill>
+            <Skill icon="https://cdn.simpleicons.org/thymeleaf">Thymeleaf</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">Docker</Skill>
+          </SkillBox>
 
           <!-- Datenbanken -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Datenbanken</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" />
-                  MySQL
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="" />
-                  MariaDB
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" />
-                  PostgreSQL
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" />
-                  MongoDB
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Datenbanken">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">MySQL</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg">MariaDB</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">PostgreSQL</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">MongoDB</Skill>
+          </SkillBox>
 
           <!-- AWS -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">AWS</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/serverless" alt="" />
-                  Serverless Framework
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/simple-icons:amazonaws.svg" alt="" />
-                  CDK
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-ecs.svg" alt="" />
-                  ECS
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-sns.svg" alt="" />
-                  SNS
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-sqs.svg" alt="" />
-                  SQS
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-cloudformation.svg" alt="" />
-                  CloudFormation
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-cloudwatch.svg" alt="" />
-                  CloudWatch
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-lambda.svg" alt="" />
-                  Lambda
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-iam.svg" alt="" />
-                  IAM
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/logos:aws-s3.svg" alt="" />
-                  S3
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="AWS">
+            <Skill icon="https://cdn.simpleicons.org/serverless">Serverless Framework</Skill>
+            <Skill icon="https://api.iconify.design/simple-icons:amazonaws.svg">CDK</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-ecs.svg">ECS</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-sns.svg">SNS</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-sqs.svg">SQS</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-cloudformation.svg">CloudFormation</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-cloudwatch.svg">CloudWatch</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-lambda.svg">Lambda</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-iam.svg">IAM</Skill>
+            <Skill icon="https://api.iconify.design/logos:aws-s3.svg">S3</Skill>
+          </SkillBox>
 
           <!-- GCP -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">GCP</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="" />
-                  GCP
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="" />
-                  Terraform
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="GCP">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg">GCP</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg">Terraform</Skill>
+          </SkillBox>
 
           <!-- Kubernetes -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Kubernetes</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="" />
-                  Kubernetes
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Kubernetes">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg">Kubernetes</Skill>
+          </SkillBox>
 
           <!-- Tools -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Tools</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="" />
-                  Spring Tool Suite
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" />
-                  VSCode
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/postman" alt="" />
-                  Postman
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/apachejmeter" alt="" />
-                  Apache JMeter
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="" />
-                  Google Chrome
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://www.heidisql.com/favicon.ico" alt="" />
-                  HeidiSQL
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/notepadplusplus" alt="" />
-                  Notepad++
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://api.iconify.design/devicon:putty.svg" alt="" />
-                  PuTTY
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/mongodb" alt="" />
-                  Studio 3T
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.simpleicons.org/datagrip" alt="" />
-                  DataGrip
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://winscp.net/favicon.ico" alt="" />
-                  WinSCP
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Tools">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">Spring Tool Suite</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">VSCode</Skill>
+            <Skill icon="https://cdn.simpleicons.org/postman">Postman</Skill>
+            <Skill icon="https://cdn.simpleicons.org/apachejmeter">Apache JMeter</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg">Google Chrome</Skill>
+            <Skill icon="https://www.heidisql.com/favicon.ico">HeidiSQL</Skill>
+            <Skill icon="https://cdn.simpleicons.org/notepadplusplus">Notepad++</Skill>
+            <Skill icon="https://api.iconify.design/devicon:putty.svg">PuTTY</Skill>
+            <Skill icon="https://cdn.simpleicons.org/mongodb">Studio 3T</Skill>
+            <Skill icon="https://cdn.simpleicons.org/datagrip">DataGrip</Skill>
+            <Skill icon="https://winscp.net/favicon.ico">WinSCP</Skill>
+          </SkillBox>
 
           <!-- Betriebssysteme -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Betriebssysteme</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="" />
-                  Windows
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" />
-                  Linux
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="" />
-                  macOS
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Betriebssysteme">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">Windows</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">Linux</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg">macOS</Skill>
+          </SkillBox>
 
           <!-- Sonstiges -->
-          <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <h3 class="w-36 shrink-0 font-semibold text-slate-900">Sonstiges</h3>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="" />
-                  REST
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="" />
-                  Clean Code
-                </span>
-
-                <span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
-                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />
-                  Git
-                </span>
-              </div>
-            </div>
-          </div>
+          <SkillBox title="Sonstiges">
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">REST</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg">Clean Code</Skill>
+            <Skill icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">Git</Skill>
+          </SkillBox>
         </div>
       </section>
 

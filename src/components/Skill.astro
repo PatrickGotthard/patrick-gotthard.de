@@ -1,0 +1,12 @@
+---
+interface Props {
+  icon: string;
+}
+
+const { icon } = Astro.props;
+---
+
+<span class="skill-badge inline-flex items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
+  <img class="skill-icon" src={icon} alt="" />
+  <slot />
+</span>
