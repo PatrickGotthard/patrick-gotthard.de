@@ -18,7 +18,6 @@ import "../styles/global.css";
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body
     class="min-h-screen overflow-x-hidden bg-slate-50 font-['Source_Sans_3',sans-serif] text-slate-900 [&_*:focus-visible]:outline-3 [&_*:focus-visible]:outline-offset-3 [&_*:focus-visible]:outline-[#6f9bc9] [&_h1]:font-['Outfit',sans-serif] [&_h2]:font-['Outfit',sans-serif] [&_h3]:font-['Outfit',sans-serif]"
@@ -28,12 +27,6 @@ import "../styles/global.css";
       <section
         class="relative order-1 pb-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200"
       >
-        <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-500" aria-label="Seitennavigation">
-          <a class="transition hover:text-blue-600" href="#skills">Skills</a>
-          <a class="transition hover:text-blue-600" href="#laufbahn">Laufbahn</a>
-          <a class="transition hover:text-blue-600" href="#kontakt">Kontakt</a>
-        </nav>
-
         <h1 class="mt-12 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
 
         <h2 class="mt-4 text-2xl font-semibold text-slate-500 sm:text-3xl">
@@ -211,46 +204,6 @@ import "../styles/global.css";
           <ContactButton href="mailto:kontakt@patrick-gotthard.de" icon="/icons/mail.svg" label="E-Mail" />
         </div>
       </section>
-
-      <!-- Footer -->
-      <footer class="order-6 mt-16 text-sm text-slate-400">
-        © <span id="year"></span> Patrick Gotthard
-      </footer>
     </main>
-
-    <button
-      id="scroll-to-top"
-      type="button"
-      class="pointer-events-none fixed right-6 bottom-6 z-50 flex h-12 w-12 translate-y-4 items-center justify-center rounded-full bg-slate-900 text-white opacity-0 shadow-lg transition-all duration-200 hover:-translate-y-1 hover:bg-blue-600"
-      aria-label="Zum Seitenanfang"
-      aria-hidden="true"
-      title="Zum Seitenanfang"
-    >
-      <i data-lucide="arrow-up" class="h-5 w-5" aria-hidden="true"></i>
-    </button>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      const scrollToTopButton = document.getElementById("scroll-to-top");
-
-      const updateScrollToTopButton = () => {
-        const isVisible = window.scrollY > 400;
-        scrollToTopButton.classList.toggle("pointer-events-none", !isVisible);
-        scrollToTopButton.classList.toggle("translate-y-4", !isVisible);
-        scrollToTopButton.classList.toggle("opacity-0", !isVisible);
-        scrollToTopButton.setAttribute("aria-hidden", String(!isVisible));
-      };
-
-      scrollToTopButton.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-      window.addEventListener("scroll", updateScrollToTopButton, {
-        passive: true
-      });
-
-      updateScrollToTopButton();
-      lucide.createIcons();
-    </script>
   </body>
 </html>
