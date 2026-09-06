@@ -2,7 +2,7 @@
 import "../styles/global.css";
 ---
 
-<html lang="de">
+<html lang="de" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -13,213 +13,28 @@ import "../styles/global.css";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Source Sans 3", sans-serif;
-        overflow-x: hidden;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: "Outfit", sans-serif;
-      }
-
-      :root {
-        --accent: rgb(111 155 201);
-        --accent-dark: rgb(69 111 156);
-        --accent-soft: rgb(226 237 248);
-        --accent-hover: rgb(209 227 244);
-      }
-
-      .skill-icon {
-        width: 1rem;
-        height: 1rem;
-        object-fit: contain;
-      }
-
-      #skills > div > div {
-        transition:
-          box-shadow 200ms ease,
-          transform 200ms ease,
-          border-color 200ms ease;
-      }
-
-      #skills > div > div:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 28px rgb(15 23 42 / 0.1);
-      }
-
-      .skill-badge.skill-badge {
-        background: var(--accent-soft);
-        color: rgb(51 65 85);
-        cursor: pointer;
-        text-decoration: none;
-        transition:
-          background-color 160ms ease,
-          color 160ms ease,
-          transform 160ms ease;
-      }
-
-      .skill-badge.skill-badge:hover {
-        transform: translateY(-1px);
-        background: var(--accent-hover);
-        color: rgb(51 65 85);
-      }
-
-      #laufbahn a {
-        color: inherit;
-        text-decoration: underline;
-        text-decoration-color: rgb(148 163 184);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 2px;
-        transition: color 160ms ease;
-      }
-
-      #laufbahn a:hover {
-        color: var(--accent-dark);
-      }
-
-      #kontakt a {
-        box-shadow: 0 10px 22px rgb(15 23 42 / 0.16);
-        transition:
-          background-color 200ms ease,
-          box-shadow 200ms ease,
-          transform 200ms ease;
-      }
-
-      #kontakt a:hover {
-        transform: translateY(-5px);
-        background: var(--accent);
-        box-shadow: 0 18px 34px rgb(15 23 42 / 0.22);
-      }
-
-      a:focus-visible {
-        outline: 3px solid var(--accent);
-        outline-offset: 3px;
-      }
-
-      .fade-up {
-        animation: fade-up 0.7s ease-out forwards;
-        opacity: 0;
-      }
-
-      .fade-up-delay-1 {
-        animation-delay: 0.15s;
-      }
-
-      .fade-up-delay-2 {
-        animation-delay: 0.3s;
-      }
-
-      .fade-up-delay-3 {
-        animation-delay: 0.45s;
-      }
-
-      .full-width-divider {
-        position: relative;
-      }
-
-      .full-width-divider::after {
-        position: absolute;
-        right: calc(50% - 50vw);
-        bottom: 0;
-        left: calc(50% - 50vw);
-        height: 1px;
-        background: rgb(226 232 240);
-        content: "";
-      }
-
-      .timeline {
-        position: relative;
-      }
-
-      .timeline::before {
-        position: absolute;
-        top: 0.5rem;
-        bottom: 0.5rem;
-        left: 0.5rem;
-        width: 1px;
-        background: rgb(203 213 225);
-        content: "";
-      }
-
-      .timeline-entry {
-        position: relative;
-        padding-left: 2rem;
-      }
-
-      .timeline-entry::before {
-        position: absolute;
-        top: 0.35rem;
-        left: 0.2rem;
-        width: 0.65rem;
-        height: 0.65rem;
-        border: 2px solid rgb(111 155 201);
-        border-radius: 999px;
-        background: rgb(248 250 252);
-        content: "";
-      }
-
-      @media (min-width: 640px) {
-        .timeline::before {
-          left: 10rem;
-        }
-
-        .timeline-entry {
-          display: grid;
-          grid-template-columns: 9rem 1fr;
-          gap: 2rem;
-          padding-left: 0;
-        }
-
-        .timeline-entry::before {
-          left: calc(10rem - 0.3rem);
-        }
-      }
-
-      @keyframes fade-up {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .fade-up {
-          animation: none;
-          opacity: 1;
-        }
-      }
-    </style>
   </head>
-
-  <body class="min-h-screen bg-slate-50 text-slate-900">
+  <body
+    class="min-h-screen overflow-x-hidden bg-slate-50 font-['Source_Sans_3',sans-serif] text-slate-900 [&_*:focus-visible]:outline-3 [&_*:focus-visible]:outline-offset-3 [&_*:focus-visible]:outline-[#6f9bc9] [&_h1]:font-['Outfit',sans-serif] [&_h2]:font-['Outfit',sans-serif] [&_h3]:font-['Outfit',sans-serif]"
+  >
     <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-20">
       <!-- Intro -->
-      <section class="full-width-divider order-1 pb-16">
-        <nav class="fade-up flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-500" aria-label="Seitennavigation">
+      <section
+        class="relative order-1 pb-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200"
+      >
+        <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-500" aria-label="Seitennavigation">
           <a class="transition hover:text-[#456f9c]" href="#skills">Skills</a>
           <a class="transition hover:text-[#456f9c]" href="#laufbahn">Laufbahn</a>
           <a class="transition hover:text-[#456f9c]" href="#kontakt">Kontakt</a>
         </nav>
 
-        <h1 class="fade-up fade-up-delay-1 mt-12 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
+        <h1 class="mt-12 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
 
-        <h2 class="fade-up fade-up-delay-2 mt-4 text-2xl font-semibold text-slate-500 sm:text-3xl">
+        <h2 class="mt-4 text-2xl font-semibold text-slate-500 sm:text-3xl">
           Softwareentwickler<span class="text-[#6f9bc9]">.</span>
         </h2>
 
-        <p class="fade-up fade-up-delay-3 mt-8 max-w-2xl text-lg leading-8 text-slate-600">
+        <p class="mt-8 max-w-2xl text-lg leading-8 text-slate-600">
           Moin moin! Ich heiße Patrick Gotthard und wurde am 20. Mai 1988 in Kiel geboren. Seit Mitte der 90er beschäftige ich mich mit Computern, angefangen
           mit MS-DOS 6.0, und habe mir im Laufe der Jahre ein umfangreiches Wissen in dem Bereich angeeignet. Mittlerweile liegt mein Schwerpunkt bei der
           Softwareentwicklung.
@@ -227,7 +42,10 @@ import "../styles/global.css";
       </section>
 
       <!-- Skills -->
-      <section id="skills" class="full-width-divider order-3 py-16">
+      <section
+        id="skills"
+        class="relative order-3 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_.skill-badge]:cursor-pointer [&_.skill-badge]:bg-[#e2edf8]! [&_.skill-badge]:text-slate-700! [&_.skill-badge]:no-underline [&_.skill-badge]:transition [&_.skill-badge]:duration-150 [&_.skill-badge:hover]:-translate-y-px [&_.skill-badge:hover]:bg-[#d1e3f4]! [&_.skill-badge:hover]:text-slate-700! [&_.skill-icon]:h-4 [&_.skill-icon]:w-4 [&_.skill-icon]:object-contain [&>div>div]:transition [&>div>div]:duration-200 [&>div>div]:ease-out [&>div>div:hover]:-translate-y-1 [&>div>div:hover]:shadow-[0_12px_28px_rgb(15_23_42/0.1)]"
+      >
         <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Skills</h2>
 
         <div class="mt-6 space-y-5">
@@ -570,10 +388,15 @@ import "../styles/global.css";
       </section>
 
       <!-- Laufbahn -->
-      <section id="laufbahn" class="full-width-divider order-4 py-16">
+      <section
+        id="laufbahn"
+        class="relative order-4 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_a]:text-inherit [&_a]:underline [&_a]:decoration-slate-400 [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a]:transition-colors [&_a:hover]:text-[#456f9c]"
+      >
         <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Laufbahn</h2>
 
-        <div class="timeline mt-8 space-y-8">
+        <div
+          class="relative mt-8 space-y-8 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-slate-300 sm:before:left-40 [&>.timeline-entry]:relative [&>.timeline-entry]:pl-8 [&>.timeline-entry]:before:absolute [&>.timeline-entry]:before:top-[0.35rem] [&>.timeline-entry]:before:left-[0.2rem] [&>.timeline-entry]:before:h-[0.65rem] [&>.timeline-entry]:before:w-[0.65rem] [&>.timeline-entry]:before:rounded-full [&>.timeline-entry]:before:border-2 [&>.timeline-entry]:before:border-[#6f9bc9] [&>.timeline-entry]:before:bg-slate-50 sm:[&>.timeline-entry]:grid sm:[&>.timeline-entry]:grid-cols-[9rem_1fr] sm:[&>.timeline-entry]:gap-8 sm:[&>.timeline-entry]:pl-0 sm:[&>.timeline-entry]:before:left-[9.7rem]"
+        >
           <div class="timeline-entry">
             <p class="text-sm font-semibold text-slate-500">09/1994 - 07/1998</p>
             <p class="font-semibold text-slate-900">
@@ -643,7 +466,7 @@ import "../styles/global.css";
             </p>
           </div>
 
-          <div class="timeline-entry before:!bg-[#6f9bc9]">
+          <div class="timeline-entry before:bg-[#6f9bc9]!">
             <p class="text-sm font-semibold text-slate-500">04/2014 - heute</p>
             <p class="font-semibold text-slate-900">
               Softwareentwickler bei der
@@ -654,7 +477,10 @@ import "../styles/global.css";
       </section>
 
       <!-- Kontakt -->
-      <section id="kontakt" class="order-5 pt-16">
+      <section
+        id="kontakt"
+        class="order-5 pt-16 [&_a]:shadow-[0_10px_22px_rgb(15_23_42/0.16)] [&_a]:transition [&_a]:duration-200 [&_a]:ease-out [&_a:hover]:-translate-y-1 [&_a:hover]:bg-[#6f9bc9] [&_a:hover]:shadow-[0_18px_34px_rgb(15_23_42/0.22)]"
+      >
         <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Kontakt</h2>
 
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -671,7 +497,6 @@ import "../styles/global.css";
                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2.16c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
               ></path>
             </svg>
-
             GitHub
           </a>
 
@@ -688,7 +513,6 @@ import "../styles/global.css";
                 d="M309.215,304.749 c30.414,57.874,62.227,114.961,94.801,173.782c4.402,7.997,11.826,19.137,8.67,26.073c-4.242,9.332-25.275,5.539-41.855,5.539 c-19.523,0-36.902,3.53-49.764-0.799c-13.125-4.416-25.002-36.989-31.6-48.979c-27.934-50.773-57.736-105.254-85.319-154.831 c47.294-86.353,103.108-180.979,152.448-270.165c7.572-13.661,13.748-33.771,31.613-34.769C396.68,0.14,413.596,1.4,430.875,1.4 c14.32,0,36.428-2.108,40.295,3.941c6.6,10.367-10.842,30.466-15.807,39.51C407.158,132.44,356.971,217.997,309.215,304.749z M125.953,357.67c15.657-1.908,23.653-23.777,30.789-36.341c22.631-39.746,45.697-80.715,66.369-117.705 c-12.774-23.728-29.766-51.385-44.249-76.624c-6.25-10.891-10.979-25.087-25.263-25.275c-25.275,0-50.575,0-75.85,0 c-4.129,0.586-7.846,1.635-8.682,5.527c-2.046,12.438,5.625,19.486,9.48,26.073c8.97,15.407,17.978,29.866,27.646,46.608 c3.094,5.327,12.874,18.938,12.625,24.489c-0.15,3.718-7.598,12.638-10.254,17.378c-21.607,38.586-39.334,70.735-60.83,109.009 c-3.194,5.689-10.267,12.301-7.896,20.534c1.023,3.605,6.749,6.637,9.469,6.325C74.853,357.67,100.403,357.67,125.953,357.67z"
               ></path>
             </svg>
-
             XING
           </a>
 
