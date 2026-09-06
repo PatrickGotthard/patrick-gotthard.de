@@ -19,14 +19,12 @@ import TimelineEntry from "../components/TimelineEntry.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <body
-    class="min-h-screen overflow-x-hidden bg-slate-50 font-['Source_Sans_3',sans-serif] text-slate-900 [&_*:focus-visible]:outline-3 [&_*:focus-visible]:outline-offset-3 [&_*:focus-visible]:outline-[#6f9bc9] [&_h1]:font-['Outfit',sans-serif] [&_h2]:font-['Outfit',sans-serif] [&_h3]:font-['Outfit',sans-serif]"
-  >
+  <body class="min-h-screen overflow-x-hidden bg-slate-50 font-['Source_Sans_3',sans-serif] text-slate-900">
     <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-20">
       <!-- Intro -->
       <section class="relative order-1 pb-16">
-        <h1 class="mt-12 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
-        <h2 class="mt-4 text-2xl font-semibold text-slate-500 sm:text-3xl">Softwareentwickler</h2>
+        <h1 class="mt-12 font-['Outfit',sans-serif] text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
+        <h2 class="mt-4 font-['Outfit',sans-serif] text-2xl font-semibold text-slate-500 sm:text-3xl">Softwareentwickler</h2>
         <p class="mt-8 max-w-2xl text-lg leading-8 text-slate-600">
           Moin moin! Ich heiße Patrick Gotthard und wurde am 20. Mai 1988 in Kiel geboren. Seit Mitte der 90er beschäftige ich mich mit Computern, angefangen
           mit MS-DOS 6.0, und habe mir im Laufe der Jahre ein umfangreiches Wissen in dem Bereich angeeignet. Mittlerweile liegt mein Schwerpunkt bei der
@@ -36,10 +34,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
       </section>
 
       <!-- Skills -->
-      <section
-        id="skills"
-        class="relative order-3 py-16 [&_.skill-badge]:cursor-pointer [&_.skill-badge]:bg-[#e2edf8]! [&_.skill-badge]:text-slate-700! [&_.skill-badge]:no-underline [&_.skill-badge]:transition [&_.skill-badge]:duration-150 [&_.skill-badge:hover]:-translate-y-px [&_.skill-badge:hover]:bg-[#d1e3f4]! [&_.skill-badge:hover]:text-slate-700! [&_.skill-icon]:h-4 [&_.skill-icon]:w-4 [&_.skill-icon]:object-contain [&>div>div]:transition [&>div>div]:duration-200 [&>div>div]:ease-out [&>div>div:hover]:-translate-y-1 [&>div>div:hover]:shadow-[0_12px_28px_rgb(15_23_42/0.1)]"
-      >
+      <section id="skills" class="relative order-3 py-16">
         <SectionTitle title="Skills" />
 
         <div class="mt-6 space-y-5">
@@ -134,10 +129,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
       </section>
 
       <!-- Laufbahn -->
-      <section
-        id="laufbahn"
-        class="relative order-4 py-16 [&_a]:text-inherit [&_a]:underline [&_a]:decoration-slate-400 [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a]:transition-colors [&_a:hover]:text-blue-600"
-      >
+      <section id="laufbahn" class="relative order-4 py-16">
         <SectionTitle title="Laufbahn" />
 
         <div class="relative mt-8 space-y-8 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-slate-300 sm:before:left-40">
@@ -188,10 +180,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
       </section>
 
       <!-- Kontakt -->
-      <section
-        id="kontakt"
-        class="order-5 pt-16 [&_a]:shadow-[0_10px_22px_rgb(15_23_42/0.16)] [&_a]:transition [&_a]:duration-200 [&_a]:ease-out [&_a:hover]:-translate-y-1 [&_a:hover]:bg-[#6f9bc9] [&_a:hover]:shadow-[0_18px_34px_rgb(15_23_42/0.22)]"
-      >
+      <section id="kontakt" class="order-5 pt-16">
         <SectionTitle title="Kontakt" />
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
           <ContactButton href="https://github.com/PatrickGotthard" icon="/icons/github.svg" label="GitHub" external />
