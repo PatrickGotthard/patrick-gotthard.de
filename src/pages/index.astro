@@ -4,6 +4,7 @@ import "../styles/global.css";
 import Skill from "../components/Skill.astro";
 import SkillBox from "../components/SkillBox.astro";
 import ContactButton from "../components/ContactButton.astro";
+import Divider from "../components/Divider.astro";
 import ExternalLink from "../components/ExternalLink.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import TimelineEntry from "../components/TimelineEntry.astro";
@@ -23,9 +24,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
   >
     <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-20">
       <!-- Intro -->
-      <section
-        class="relative order-1 pb-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200"
-      >
+      <section class="relative order-1 pb-16">
         <h1 class="mt-12 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
         <h2 class="mt-4 text-2xl font-semibold text-slate-500 sm:text-3xl">Softwareentwickler</h2>
         <p class="mt-8 max-w-2xl text-lg leading-8 text-slate-600">
@@ -33,12 +32,13 @@ import TimelineEntry from "../components/TimelineEntry.astro";
           mit MS-DOS 6.0, und habe mir im Laufe der Jahre ein umfangreiches Wissen in dem Bereich angeeignet. Mittlerweile liegt mein Schwerpunkt bei der
           Softwareentwicklung.
         </p>
+        <Divider />
       </section>
 
       <!-- Skills -->
       <section
         id="skills"
-        class="relative order-3 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_.skill-badge]:cursor-pointer [&_.skill-badge]:bg-[#e2edf8]! [&_.skill-badge]:text-slate-700! [&_.skill-badge]:no-underline [&_.skill-badge]:transition [&_.skill-badge]:duration-150 [&_.skill-badge:hover]:-translate-y-px [&_.skill-badge:hover]:bg-[#d1e3f4]! [&_.skill-badge:hover]:text-slate-700! [&_.skill-icon]:h-4 [&_.skill-icon]:w-4 [&_.skill-icon]:object-contain [&>div>div]:transition [&>div>div]:duration-200 [&>div>div]:ease-out [&>div>div:hover]:-translate-y-1 [&>div>div:hover]:shadow-[0_12px_28px_rgb(15_23_42/0.1)]"
+        class="relative order-3 py-16 [&_.skill-badge]:cursor-pointer [&_.skill-badge]:bg-[#e2edf8]! [&_.skill-badge]:text-slate-700! [&_.skill-badge]:no-underline [&_.skill-badge]:transition [&_.skill-badge]:duration-150 [&_.skill-badge:hover]:-translate-y-px [&_.skill-badge:hover]:bg-[#d1e3f4]! [&_.skill-badge:hover]:text-slate-700! [&_.skill-icon]:h-4 [&_.skill-icon]:w-4 [&_.skill-icon]:object-contain [&>div>div]:transition [&>div>div]:duration-200 [&>div>div]:ease-out [&>div>div:hover]:-translate-y-1 [&>div>div:hover]:shadow-[0_12px_28px_rgb(15_23_42/0.1)]"
       >
         <SectionTitle title="Skills" />
 
@@ -130,12 +130,13 @@ import TimelineEntry from "../components/TimelineEntry.astro";
             <Skill icon="/icons/skills/git.svg">Git</Skill>
           </SkillBox>
         </div>
+        <Divider />
       </section>
 
       <!-- Laufbahn -->
       <section
         id="laufbahn"
-        class="relative order-4 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_a]:text-inherit [&_a]:underline [&_a]:decoration-slate-400 [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a]:transition-colors [&_a:hover]:text-blue-600"
+        class="relative order-4 py-16 [&_a]:text-inherit [&_a]:underline [&_a]:decoration-slate-400 [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a]:transition-colors [&_a:hover]:text-blue-600"
       >
         <SectionTitle title="Laufbahn" />
 
@@ -185,6 +186,7 @@ import TimelineEntry from "../components/TimelineEntry.astro";
             Softwareentwickler bei der <ExternalLink href="https://www.freenet-mobilfunk.de/">freenet DLS GmbH</ExternalLink>
           </TimelineEntry>
         </div>
+        <Divider />
       </section>
 
       <!-- Kontakt -->
