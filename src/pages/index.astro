@@ -154,28 +154,32 @@ import "../styles/global.css";
         <div
           class="relative mt-8 space-y-8 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-slate-300 sm:before:left-40 [&>.timeline-entry]:relative [&>.timeline-entry]:pl-8 [&>.timeline-entry]:before:absolute [&>.timeline-entry]:before:top-[0.35rem] [&>.timeline-entry]:before:left-[0.2rem] [&>.timeline-entry]:before:h-[0.65rem] [&>.timeline-entry]:before:w-[0.65rem] [&>.timeline-entry]:before:rounded-full [&>.timeline-entry]:before:border-2 [&>.timeline-entry]:before:border-[#6f9bc9] [&>.timeline-entry]:before:bg-slate-50 sm:[&>.timeline-entry]:grid sm:[&>.timeline-entry]:grid-cols-[9rem_1fr] sm:[&>.timeline-entry]:gap-8 sm:[&>.timeline-entry]:pl-0 sm:[&>.timeline-entry]:before:left-[9.7rem]"
         >
+          <!-- Grundschule -->
           <TimelineEntry date="09/1994 - 07/1998">
-            <ExternalLink href="https://grundschuledaenischenhagen.de/"> Grundschule Dänischenhagen </ExternalLink>
+            <ExternalLink href="https://grundschuledaenischenhagen.de/">Grundschule Dänischenhagen</ExternalLink>
           </TimelineEntry>
 
+          <!-- Realschule -->
           <TimelineEntry date="09/1998 - 06/2004">
             <ExternalLink href="https://www.gemeinschaftsschule-altenholz.de/">Realschule Altenholz</ExternalLink>
           </TimelineEntry>
 
+          <!-- Gymnasium -->
           <TimelineEntry date="08/2004 - 06/2007">
-            <ExternalLink href="https://rbz-technik-kiel.geo.io/"> Berufliches Gymnasium Fachrichtung Technik </ExternalLink>
+            <ExternalLink href="https://rbz-technik-kiel.geo.io/">Berufliches Gymnasium Fachrichtung Technik </ExternalLink>
           </TimelineEntry>
 
+          <!-- Zivildienst -->
           <TimelineEntry date="08/2007 - 04/2008">
-            Zivildienst beim
-            <ExternalLink href="https://www.paritaet-sh.org/">Paritätischen SH</ExternalLink>
+            Zivildienst beim <ExternalLink href="https://www.paritaet-sh.org/">Paritätischen SH</ExternalLink>
           </TimelineEntry>
 
+          <!-- Praktikum -->
           <TimelineEntry date="05/2008 - 09/2008">
-            Praktikum bei der
-            <ExternalLink href="https://www.consist.de/"> Consist Software Solutions GmbH </ExternalLink>
+            Praktikum bei der <ExternalLink href="https://www.consist.de/">Consist Software Solutions GmbH </ExternalLink>
           </TimelineEntry>
 
+          <!-- Studium  -->
           <TimelineEntry date="10/2008 - 09/2011">
             Duales Studium zum B.Sc. (Wirtschaftsinformatik) an der
             <ExternalLink href="https://www.wak-sh.de/"> Wirtschaftsakademie Schleswig-Holstein </ExternalLink>
@@ -183,14 +187,14 @@ import "../styles/global.css";
             <ExternalLink href="https://www.consist.de/"> Consist Software Solutions GmbH </ExternalLink>
           </TimelineEntry>
 
+          <!-- Bader & Jene -->
           <TimelineEntry date="10/2011 - 03/2014">
-            Softwareentwickler bei der
-            <ExternalLink href="https://www.askdante.com/ueber-uns"> Bader&amp;Jene Software-Ingenieurbüro GmbH </ExternalLink>
+            Softwareentwickler bei der <ExternalLink href="https://www.askdante.com/ueber-uns">Bader&amp;Jene Software-Ingenieurbüro GmbH</ExternalLink>
           </TimelineEntry>
 
+          <!-- freenet -->
           <TimelineEntry date="04/2014 - heute" current>
-            Softwareentwickler bei der
-            <ExternalLink href="https://www.freenet-mobilfunk.de/">freenet DLS GmbH</ExternalLink>
+            Softwareentwickler bei der <ExternalLink href="https://www.freenet-mobilfunk.de/">freenet DLS GmbH</ExternalLink>
           </TimelineEntry>
         </div>
       </section>
@@ -201,17 +205,10 @@ import "../styles/global.css";
         class="order-5 pt-16 [&_a]:shadow-[0_10px_22px_rgb(15_23_42/0.16)] [&_a]:transition [&_a]:duration-200 [&_a]:ease-out [&_a:hover]:-translate-y-1 [&_a:hover]:bg-[#6f9bc9] [&_a:hover]:shadow-[0_18px_34px_rgb(15_23_42/0.22)]"
       >
         <SectionTitle title="Kontakt" />
-
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-          <ContactButton href="https://github.com/PatrickGotthard" label="GitHub" external>
-            <img slot="icon" class="h-5 w-5" src="/icons/github.svg" alt="" />
-          </ContactButton>
-          <ContactButton href="https://www.xing.com/profile/Patrick_Gotthard" label="XING" external>
-            <img slot="icon" class="h-5 w-5" src="/icons/xing.svg" alt="" />
-          </ContactButton>
-          <ContactButton href="mailto:kontakt@patrick-gotthard.de" label="E-Mail">
-            <img slot="icon" class="h-5 w-5" src="/icons/mail.svg" alt="" />
-          </ContactButton>
+          <ContactButton href="https://github.com/PatrickGotthard" icon="/icons/github.svg" label="GitHub" external />
+          <ContactButton href="https://www.xing.com/profile/Patrick_Gotthard" icon="/icons/xing.svg" label="XING" external />
+          <ContactButton href="mailto:kontakt@patrick-gotthard.de" icon="/icons/mail.svg" label="E-Mail" />
         </div>
       </section>
 
