@@ -2,6 +2,7 @@
 import Skill from "../components/Skill.astro";
 import SkillBox from "../components/SkillBox.astro";
 import ContactButton from "../components/ContactButton.astro";
+import SectionTitle from "../components/SectionTitle.astro";
 import TimelineEntry from "../components/TimelineEntry.astro";
 import "../styles/global.css";
 ---
@@ -50,7 +51,7 @@ import "../styles/global.css";
         id="skills"
         class="relative order-3 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_.skill-badge]:cursor-pointer [&_.skill-badge]:bg-[#e2edf8]! [&_.skill-badge]:text-slate-700! [&_.skill-badge]:no-underline [&_.skill-badge]:transition [&_.skill-badge]:duration-150 [&_.skill-badge:hover]:-translate-y-px [&_.skill-badge:hover]:bg-[#d1e3f4]! [&_.skill-badge:hover]:text-slate-700! [&_.skill-icon]:h-4 [&_.skill-icon]:w-4 [&_.skill-icon]:object-contain [&>div>div]:transition [&>div>div]:duration-200 [&>div>div]:ease-out [&>div>div:hover]:-translate-y-1 [&>div>div:hover]:shadow-[0_12px_28px_rgb(15_23_42/0.1)]"
       >
-        <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Skills</h2>
+        <SectionTitle title="Skills" />
 
         <div class="mt-6 space-y-5">
           <!-- Sprachen -->
@@ -147,7 +148,7 @@ import "../styles/global.css";
         id="laufbahn"
         class="relative order-4 py-16 after:absolute after:right-[calc(50%-50vw)] after:bottom-0 after:left-[calc(50%-50vw)] after:h-px after:bg-slate-200 [&_a]:text-inherit [&_a]:underline [&_a]:decoration-slate-400 [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a]:transition-colors [&_a:hover]:text-blue-600"
       >
-        <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Laufbahn</h2>
+        <SectionTitle title="Laufbahn" />
 
         <div
           class="relative mt-8 space-y-8 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-slate-300 sm:before:left-40 [&>.timeline-entry]:relative [&>.timeline-entry]:pl-8 [&>.timeline-entry]:before:absolute [&>.timeline-entry]:before:top-[0.35rem] [&>.timeline-entry]:before:left-[0.2rem] [&>.timeline-entry]:before:h-[0.65rem] [&>.timeline-entry]:before:w-[0.65rem] [&>.timeline-entry]:before:rounded-full [&>.timeline-entry]:before:border-2 [&>.timeline-entry]:before:border-[#6f9bc9] [&>.timeline-entry]:before:bg-slate-50 sm:[&>.timeline-entry]:grid sm:[&>.timeline-entry]:grid-cols-[9rem_1fr] sm:[&>.timeline-entry]:gap-8 sm:[&>.timeline-entry]:pl-0 sm:[&>.timeline-entry]:before:left-[9.7rem]"
@@ -212,7 +213,7 @@ import "../styles/global.css";
         id="kontakt"
         class="order-5 pt-16 [&_a]:shadow-[0_10px_22px_rgb(15_23_42/0.16)] [&_a]:transition [&_a]:duration-200 [&_a]:ease-out [&_a:hover]:-translate-y-1 [&_a:hover]:bg-[#6f9bc9] [&_a:hover]:shadow-[0_18px_34px_rgb(15_23_42/0.22)]"
       >
-        <h2 class="text-sm font-semibold tracking-[0.2em] text-slate-400 uppercase">Kontakt</h2>
+        <SectionTitle title="Kontakt" />
 
         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
           <!-- GitHub -->
