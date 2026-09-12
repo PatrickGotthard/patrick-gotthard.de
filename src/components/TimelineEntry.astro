@@ -6,11 +6,10 @@ interface Props {
 const { date } = Astro.props;
 ---
 
-<div
-  class="relative pl-8 before:absolute before:top-1.5 before:left-2 before:h-2.5 before:w-2.5 before:-translate-x-1/2 before:rounded-full before:border-2 before:border-blue-400 before:bg-slate-50 sm:grid sm:grid-cols-[9rem_1fr] sm:gap-8 sm:pl-0 sm:before:left-40"
->
-  <p class="text-sm font-semibold text-slate-500">{date}</p>
-  <p class="font-semibold text-slate-900">
+<div class="relative pl-8 sm:grid sm:grid-cols-[9rem_1fr] sm:gap-8 sm:pl-0">
+  <span class="absolute top-1.5 left-2 size-2.5 -translate-x-1/2 rounded-full border-2 border-blue-400 bg-slate-50 sm:left-40"></span>
+  <p class="text-sm font-medium">{date}</p>
+  <p class="text-sm font-medium">
     <slot />
   </p>
 </div>

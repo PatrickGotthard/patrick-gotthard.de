@@ -1,20 +1,15 @@
 ---
+import { Icon } from "astro-icon/components";
+
 interface Props {
-  href: string;
   icon: string;
-  label: string;
-  external?: boolean;
+  href: string;
 }
 
-const { href, icon, label, external = false } = Astro.props;
+const { icon, href } = Astro.props;
 ---
 
-<a
-  href={href}
-  target={external ? "_blank" : undefined}
-  rel={external ? "noopener noreferrer" : undefined}
-  class="inline-flex items-center justify-center gap-3 rounded-lg bg-slate-600 px-5 py-3 text-white transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-400"
->
-  <img class="h-5 w-5" src={icon} alt="" />
-  {label}
+<a href={href} class="inline-flex items-center justify-center gap-2 text-sm font-medium transition hover:text-blue-400">
+  <Icon class="size-5" name={icon} />
+  <slot />
 </a>

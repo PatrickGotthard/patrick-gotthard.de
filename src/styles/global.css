@@ -1,16 +1,9 @@
-@import "@fontsource/outfit/500.css";
-@import "@fontsource/outfit/600.css";
-@import "@fontsource/outfit/700.css";
-@import "@fontsource/outfit/800.css";
-
-@import "@fontsource/source-sans-3/400.css";
-@import "@fontsource/source-sans-3/500.css";
-@import "@fontsource/source-sans-3/600.css";
-@import "@fontsource/source-sans-3/700.css";
-
+@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/source-sans-3";
 @import "tailwindcss";
 @import "tailwind-animations";
 
 @theme {
-  --font-sans: "Source Sans 3", sans-serif;
+  --font-heading: "Outfit Variable", sans-serif;
+  --font-sans: "Source Sans 3 Variable", sans-serif;
 }

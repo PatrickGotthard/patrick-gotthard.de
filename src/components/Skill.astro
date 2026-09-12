@@ -1,14 +1,15 @@
 ---
+import { Icon } from "astro-icon/components";
+
 interface Props {
   icon: string;
+  href?: string;
 }
 
-const { icon } = Astro.props;
+const { icon, href } = Astro.props;
 ---
 
-<span
-  class="skill-badge inline-flex cursor-pointer items-center gap-1.5 rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-slate-700 no-underline transition duration-150 hover:-translate-y-px hover:bg-blue-100 hover:text-slate-700 focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-blue-400"
->
-  <img class="skill-icon h-4 w-4 object-contain" src={icon} alt="" />
+<a class="inline-flex items-center gap-1.5 rounded bg-blue-50 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-px hover:bg-blue-100" href={href}>
+  <Icon class="size-4" name={icon} />
   <slot />
-</span>
+</a>
