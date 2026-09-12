@@ -1,42 +1,33 @@
 ---
 import "../styles/global.css";
 
+import Layout from "../layouts/Layout.astro";
+
 import Divider from "../components/Divider.astro";
+import Footer from "../components/Footer.astro";
 import Section from "../components/Section.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<html lang="de" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Patrick Gotthard - Softwareentwickler</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body class="bg-slate-50 text-slate-800">
-    <Section>
-      <h1 class="animate-fade-in-up animate-delay-100 font-heading text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
-      <h2 class="animate-fade-in-up animate-delay-200 font-heading font-medum mt-4 text-2xl sm:text-3xl">Softwareentwickler</h2>
-    </Section>
+<Layout title="Impressum">
+  <Section>
+    <Hero />
+  </Section>
 
-    <Divider />
+  <Divider />
 
-    <Section>
-      <h1>Impressum</h1>
+  <Section title="Impressum">
+    <h2 class="font-heading mt-8 mb-2 text-lg font-medium">Angaben gemäß § 5 DDG</h2>
+    <p>
+      Patrick Gotthard<br />
+      Wespenweg 6<br />
+      24145 Kiel<br />
+      Deutschland
+    </p>
 
-      <h2>Angaben gemäß § 5 DDG</h2>
-      <p>
-        Patrick Gotthard<br />
-        Wespenweg 6<br />
-        24145 Kiel<br />
-        Deutschland
-      </p>
-
-      <h2>Kontakt</h2>
-      <p>
-        E-Mail: <a href="mailto:mail@patrick-gotthard.de">mailto:mail@patrick-gotthard.de</a>
-      </p>
-    </Section>
-  </body>
-</html>
+    <h2 class="font-heading mt-8 mb-2 text-lg font-medium">Kontakt</h2>
+    <p>
+      E-Mail: <a href="mailto:mail@patrick-gotthard.de">mailto:mail@patrick-gotthard.de</a>
+    </p>
+  </Section>
+</Layout>

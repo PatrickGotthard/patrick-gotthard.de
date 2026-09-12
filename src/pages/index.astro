@@ -1,8 +1,11 @@
 ---
 import "../styles/global.css";
 
-import ContactButton from "../components/ContactButton.astro";
+import Layout from "../layouts/Layout.astro";
+
+import FooterLink from "../components/FooterLink.astro";
 import Divider from "../components/Divider.astro";
+import Hero from "../components/Hero.astro";
 import Link from "../components/Link.astro";
 import Section from "../components/Section.astro";
 import Skill from "../components/Skill.astro";
@@ -11,190 +14,168 @@ import TimelineEntry from "../components/TimelineEntry.astro";
 import Timeline from "../components/Timeline.astro";
 ---
 
-<html lang="de" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Patrick Gotthard - Softwareentwickler</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body class="bg-slate-50 text-slate-800">
-    <Section>
-      <h1 class="animate-fade-in-up animate-delay-100 font-heading text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Patrick Gotthard</h1>
-      <h2 class="animate-fade-in-up animate-delay-200 font-heading font-medum mt-4 text-2xl sm:text-3xl">Softwareentwickler</h2>
-      <p class="animate-fade-in-up animate-delay-300 mt-8 leading-8">
-        Moin moin! Ich bin Patrick, wurde am 20. Mai 1988 in Kiel geboren und beschäftige mich schon seit Mitte der 90er mit Computern. Im Laufe der Jahre habe
-        ich mir ein umfangreiches Wissen rund um Betriebssysteme, Netzwerke und Programmierung angeeignet. Mittlerweile habe ich mich auf die
-        Softwareentwicklung mit Java und TypeScript sowie Webtechnologien in der Cloud spezialisiert.
-      </p>
-    </Section>
+<Layout title="Softwareentwickler">
+  <Section>
+    <Hero />
+    <p class="mt-8 leading-8">
+      Moin moin! Ich bin Patrick, wurde am 20. Mai 1988 in Kiel geboren und beschäftige mich schon seit Mitte der 90er mit Computern. Im Laufe der Jahre habe
+      ich mir ein umfangreiches Wissen rund um Betriebssysteme, Netzwerke und Programmierung angeeignet. Mittlerweile habe ich mich auf die Softwareentwicklung
+      mit Java und TypeScript sowie Webtechnologien in der Cloud spezialisiert.
+    </p>
+  </Section>
 
-    <Divider />
+  <Divider />
 
-    <Section title="Skills">
-      <SkillBox title="Sprachen">
-        <Skill icon="devicon:java" href="https://www.java.com">Java</Skill>
-        <Skill icon="devicon:typescript" href="https://www.typescriptlang.org">TypeScript</Skill>
-        <Skill icon="devicon:javascript" href="https://developer.mozilla.org/de/docs/Web/JavaScript">JavaScript</Skill>
-        <Skill icon="devicon:python" href="https://www.python.org">Python</Skill>
-        <Skill icon="devicon:bash" href="https://www.gnu.org/software/bash">Bash</Skill>
-        <Skill icon="devicon:html5" href="https://developer.mozilla.org/de/docs/Web/HTML">HTML</Skill>
-        <Skill icon="devicon:css3" href="https://www.w3.org/Style/CSS/Overview.de.html">CSS</Skill>
-      </SkillBox>
+  <Section title="Skills">
+    <SkillBox title="Sprachen">
+      <Skill icon="devicon:java" href="https://www.java.com">Java</Skill>
+      <Skill icon="devicon:typescript" href="https://www.typescriptlang.org">TypeScript</Skill>
+      <Skill icon="devicon:javascript" href="https://developer.mozilla.org/de/docs/Web/JavaScript">JavaScript</Skill>
+      <Skill icon="devicon:python" href="https://www.python.org">Python</Skill>
+      <Skill icon="devicon:bash" href="https://www.gnu.org/software/bash">Bash</Skill>
+      <Skill icon="devicon:html5" href="https://developer.mozilla.org/de/docs/Web/HTML">HTML</Skill>
+      <Skill icon="devicon:css3" href="https://www.w3.org/Style/CSS/Overview.de.html">CSS</Skill>
+    </SkillBox>
 
-      <SkillBox title="Frameworks">
-        <Skill icon="devicon:spring" href="https://spring.io">Spring</Skill>
-        <Skill icon="thesvg-color:spring-boot" href="https://spring.io/projects/spring-boot">Spring Boot</Skill>
-        <Skill icon="devicon:nodejs" href="https://nodejs.org">Node.js</Skill>
-        <Skill icon="logos:sencha" href="https://www.sencha.com/products/extjs">Ext JS</Skill>
-        <Skill icon="devicon:svelte" href="https://svelte.dev">Svelte</Skill>
-        <Skill icon="devicon:vuejs" href="https://vuejs.org">Vue.js</Skill>
-        <Skill icon="devicon:tailwindcss" href="https://tailwindcss.com">Tailwind CSS</Skill>
-      </SkillBox>
+    <SkillBox title="Frameworks">
+      <Skill icon="devicon:spring" href="https://spring.io">Spring</Skill>
+      <Skill icon="thesvg-color:spring-boot" href="https://spring.io/projects/spring-boot">Spring Boot</Skill>
+      <Skill icon="devicon:nodejs" href="https://nodejs.org">Node.js</Skill>
+      <Skill icon="logos:sencha" href="https://www.sencha.com/products/extjs">Ext JS</Skill>
+      <Skill icon="devicon:svelte" href="https://svelte.dev">Svelte</Skill>
+      <Skill icon="devicon:vuejs" href="https://vuejs.org">Vue.js</Skill>
+      <Skill icon="devicon:tailwindcss" href="https://tailwindcss.com">Tailwind CSS</Skill>
+    </SkillBox>
 
-      <SkillBox title="Build-Tools">
-        <Skill icon="devicon:maven" href="https://maven.apache.org">Maven</Skill>
-        <Skill icon="devicon:npm" href="https://www.npmjs.com">npm</Skill>
-      </SkillBox>
+    <SkillBox title="Build-Tools">
+      <Skill icon="devicon:maven" href="https://maven.apache.org">Maven</Skill>
+      <Skill icon="devicon:npm" href="https://www.npmjs.com">npm</Skill>
+    </SkillBox>
 
-      <SkillBox title="Datenbanken">
-        <Skill icon="devicon:mariadb" href="https://mariadb.org">MariaDB</Skill>
-        <Skill icon="devicon:mongodb" href="https://www.mongodb.com">MongoDB</Skill>
-        <Skill icon="devicon:mysql" href="https://www.mysql.com">MySQL</Skill>
-        <Skill icon="devicon:postgresql" href="https://www.postgresql.org">PostgreSQL</Skill>
-      </SkillBox>
+    <SkillBox title="Datenbanken">
+      <Skill icon="devicon:mariadb" href="https://mariadb.org">MariaDB</Skill>
+      <Skill icon="devicon:mongodb" href="https://www.mongodb.com">MongoDB</Skill>
+      <Skill icon="devicon:mysql" href="https://www.mysql.com">MySQL</Skill>
+      <Skill icon="devicon:postgresql" href="https://www.postgresql.org">PostgreSQL</Skill>
+    </SkillBox>
 
-      <SkillBox title="AWS">
-        <Skill icon="logos:aws-api-gateway" href="https://aws.amazon.com/api-gateway">API Gateway</Skill>
-        <Skill icon="logos:aws-cloudformation" href="https://aws.amazon.com/cloudformation">CloudFormation</Skill>
-        <Skill icon="logos:aws-cloudfront" hr ef="https://aws.amazon.com/cloudfront">CloudFront</Skill>
-        <Skill icon="logos:aws-cloudwatch" href="https://aws.amazon.com/cloudwatch">CloudWatch</Skill>
-        <Skill icon="logos:aws-ecs" href="https://aws.amazon.com/ecs">ECS</Skill>
-        <Skill icon="logos:aws-iam" href="https://aws.amazon.com/iam">IAM</Skill>
-        <Skill icon="logos:aws-lambda" href="https://aws.amazon.com/lambda">Lambda</Skill>
-        <Skill icon="logos:aws-s3" href="https://aws.amazon.com/s3">S3</Skill>
-        <Skill icon="logos:aws-sns" href="https://aws.amazon.com/sns">SNS</Skill>
-        <Skill icon="logos:aws-sqs" href="https://aws.amazon.com/sqs">SQS</Skill>
-        <Skill icon="logos:aws-systems-manager" href="https://aws.amazon.com/systems-manager">Systems Manager</Skill>
-        <Skill icon="aws-cdk" href="https://aws.amazon.com/cdk">CDK</Skill>
-        <Skill icon="logos:serverless" href="https://www.serverless.com">Serverless Framework</Skill>
-      </SkillBox>
+    <SkillBox title="AWS">
+      <Skill icon="logos:aws-api-gateway" href="https://aws.amazon.com/api-gateway">API Gateway</Skill>
+      <Skill icon="logos:aws-cloudformation" href="https://aws.amazon.com/cloudformation">CloudFormation</Skill>
+      <Skill icon="logos:aws-cloudfront" hr ef="https://aws.amazon.com/cloudfront">CloudFront</Skill>
+      <Skill icon="logos:aws-cloudwatch" href="https://aws.amazon.com/cloudwatch">CloudWatch</Skill>
+      <Skill icon="logos:aws-ecs" href="https://aws.amazon.com/ecs">ECS</Skill>
+      <Skill icon="logos:aws-iam" href="https://aws.amazon.com/iam">IAM</Skill>
+      <Skill icon="logos:aws-lambda" href="https://aws.amazon.com/lambda">Lambda</Skill>
+      <Skill icon="logos:aws-s3" href="https://aws.amazon.com/s3">S3</Skill>
+      <Skill icon="logos:aws-sns" href="https://aws.amazon.com/sns">SNS</Skill>
+      <Skill icon="logos:aws-sqs" href="https://aws.amazon.com/sqs">SQS</Skill>
+      <Skill icon="logos:aws-systems-manager" href="https://aws.amazon.com/systems-manager">Systems Manager</Skill>
+      <Skill icon="aws-cdk" href="https://aws.amazon.com/cdk">CDK</Skill>
+      <Skill icon="logos:serverless" href="https://www.serverless.com">Serverless Framework</Skill>
+    </SkillBox>
 
-      <SkillBox title="GCP">
-        <Skill icon="gcp:artifact-registry" href="https://cloud.google.com/artifact-registry">Artifact Registry</Skill>
-        <Skill icon="gcp:cloud-run" href="https://cloud.google.com/run">Cloud Run</Skill>
-        <Skill icon="gcp:cloud-tasks" href="https://cloud.google.com/tasks">Cloud Tasks</Skill>
-        <Skill icon="gcp:pubsub" href="https://cloud.google.com/pubsub">Pub/Sub</Skill>
-        <Skill icon="gcp:security" href="https://cloud.google.com/iam">IAM</Skill>
-        <Skill icon="gcp:secret-manager" href="https://cloud.google.com/secret-manager">Secret Manager</Skill>
-        <Skill icon="devicon:terraform" href="https://developer.hashicorp.com/terraform">Terraform</Skill>
-      </SkillBox>
+    <SkillBox title="GCP">
+      <Skill icon="gcp:artifact-registry" href="https://cloud.google.com/artifact-registry">Artifact Registry</Skill>
+      <Skill icon="gcp:cloud-run" href="https://cloud.google.com/run">Cloud Run</Skill>
+      <Skill icon="gcp:cloud-tasks" href="https://cloud.google.com/tasks">Cloud Tasks</Skill>
+      <Skill icon="gcp:pubsub" href="https://cloud.google.com/pubsub">Pub/Sub</Skill>
+      <Skill icon="gcp:security" href="https://cloud.google.com/iam">IAM</Skill>
+      <Skill icon="gcp:secret-manager" href="https://cloud.google.com/secret-manager">Secret Manager</Skill>
+      <Skill icon="devicon:terraform" href="https://developer.hashicorp.com/terraform">Terraform</Skill>
+    </SkillBox>
 
-      <SkillBox title="CI/CD">
-        <Skill icon="devicon:bamboo" href="https://www.atlassian.com/de/software/bamboo">Bamboo</Skill>
-        <Skill icon="devicon:githubactions" href="https://github.com/features/actions">GitHub Actions</Skill>
-        <Skill icon="devicon:jenkins" href="https://www.jenkins.io">Jenkins</Skill>
-        <Skill icon="thesvg-color:renovate" href="https://www.mend.io/renovate">Renovate</Skill>
-      </SkillBox>
+    <SkillBox title="CI/CD">
+      <Skill icon="devicon:bamboo" href="https://www.atlassian.com/de/software/bamboo">Bamboo</Skill>
+      <Skill icon="devicon:githubactions" href="https://github.com/features/actions">GitHub Actions</Skill>
+      <Skill icon="devicon:jenkins" href="https://www.jenkins.io">Jenkins</Skill>
+      <Skill icon="thesvg-color:renovate" href="https://www.mend.io/renovate">Renovate</Skill>
+    </SkillBox>
 
-      <SkillBox title="Tools">
-        <Skill icon="thesvg-color:apache-jmeter" href="https://jmeter.apache.org">Apache JMeter</Skill>
-        <Skill icon="devicon:datagrip" href="https://www.jetbrains.com/datagrip">DataGrip</Skill>
-        <Skill icon="devicon:docker" href="https://www.docker.com">Docker</Skill>
-        <Skill icon="selfhst:draw-io" href="https://www.drawio.com">draw.io</Skill>
-        <Skill icon="devicon:eclipse" href="https://eclipseide.org">Eclipse</Skill>
-        <Skill icon="devicon:git" href="https://git-scm.com">Git</Skill>
-        <Skill icon="devicon:chrome" href="https://www.google.com/chrome">Google Chrome</Skill>
-        <Skill icon="selfhst:microsoft-365" href="https://www.microsoft.com/microsoft-365">Microsoft 365</Skill>
-        <Skill icon="thesvg-color:notepadplusplus" href="https://notepad-plus-plus.org">Notepad++</Skill>
-        <Skill icon="devicon:postman" href="https://www.postman.com">Postman</Skill>
-        <Skill icon="devicon:putty" href="https://www.chiark.greenend.org.uk/~sgtatham/putty">PuTTY</Skill>
-        <Skill icon="thesvg-color:studio-3t" href="https://studio3t.com">Studio 3T</Skill>
-        <Skill icon="devicon:vscode" href="https://code.visualstudio.com">VSCode</Skill>
-      </SkillBox>
+    <SkillBox title="Tools">
+      <Skill icon="thesvg-color:apache-jmeter" href="https://jmeter.apache.org">Apache JMeter</Skill>
+      <Skill icon="devicon:datagrip" href="https://www.jetbrains.com/datagrip">DataGrip</Skill>
+      <Skill icon="devicon:docker" href="https://www.docker.com">Docker</Skill>
+      <Skill icon="selfhst:draw-io" href="https://www.drawio.com">draw.io</Skill>
+      <Skill icon="devicon:eclipse" href="https://eclipseide.org">Eclipse</Skill>
+      <Skill icon="devicon:git" href="https://git-scm.com">Git</Skill>
+      <Skill icon="devicon:chrome" href="https://www.google.com/chrome">Google Chrome</Skill>
+      <Skill icon="selfhst:microsoft-365" href="https://www.microsoft.com/microsoft-365">Microsoft 365</Skill>
+      <Skill icon="thesvg-color:notepadplusplus" href="https://notepad-plus-plus.org">Notepad++</Skill>
+      <Skill icon="devicon:postman" href="https://www.postman.com">Postman</Skill>
+      <Skill icon="devicon:putty" href="https://www.chiark.greenend.org.uk/~sgtatham/putty">PuTTY</Skill>
+      <Skill icon="thesvg-color:studio-3t" href="https://studio3t.com">Studio 3T</Skill>
+      <Skill icon="devicon:vscode" href="https://code.visualstudio.com">VSCode</Skill>
+    </SkillBox>
 
-      <SkillBox title="Betriebssysteme">
-        <Skill icon="devicon:windows11" href="https://www.microsoft.com/windows">Windows</Skill>
-        <Skill icon="devicon:linux" href="https://www.kernel.org">Linux</Skill>
-        <Skill icon="devicon:apple" href="https://www.apple.com/de/os/macos">macOS</Skill>
-      </SkillBox>
+    <SkillBox title="Betriebssysteme">
+      <Skill icon="devicon:windows11" href="https://www.microsoft.com/windows">Windows</Skill>
+      <Skill icon="devicon:linux" href="https://www.kernel.org">Linux</Skill>
+      <Skill icon="devicon:apple" href="https://www.apple.com/de/os/macos">macOS</Skill>
+    </SkillBox>
 
-      <SkillBox title="Homelab">
-        <Skill icon="thesvg-color:adguard" href="https://adguard.com/de/adguard-home/overview.html">AdGuard Home</Skill>
-        <Skill icon="thesvg-color:checkmk" href="https://checkmk.com">Checkmk</Skill>
-        <Skill icon="thesvg-color:dovecot" href="https://dovecot.org">Dovecot</Skill>
-        <Skill icon="devicon:mongodb" href="https://www.mongodb.com">MongoDB</Skill>
-        <Skill icon="thesvg-color:nginx" href="https://nginx.org">nginx</Skill>
-        <Skill icon="selfhst:opnsense" href="https://opnsense.org">OPNsense</Skill>
-        <Skill icon="thesvg-color:portainer" href="https://www.portainer.io">Portainer</Skill>
-        <Skill icon="thesvg-color:teamspeak" href="https://www.teamspeak.com">Teamspeak</Skill>
-        <Skill icon="thesvg-color:traefik" href="https://traefik.io/traefik">Traefik Proxy</Skill>
-        <Skill icon="selfhst:truenas-scale" href="https://www.truenas.com">TrueNAS</Skill>
-        <Skill icon="selfhst:tvheadend" href="https://tvheadend.org">TvHeadend</Skill>
-        <Skill icon="selfhst:unbound" href="https://nlnetlabs.nl/projects/unbound/about">Unbound</Skill>
-        <Skill icon="selfhst:ubiquiti-unifi" href="https://ui.com">Unifi</Skill>
-        <Skill icon="thesvg-color:vaultwarden" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</Skill>
-      </SkillBox>
+    <SkillBox title="Homelab">
+      <Skill icon="thesvg-color:adguard" href="https://adguard.com/de/adguard-home/overview.html">AdGuard Home</Skill>
+      <Skill icon="thesvg-color:checkmk" href="https://checkmk.com">Checkmk</Skill>
+      <Skill icon="thesvg-color:dovecot" href="https://dovecot.org">Dovecot</Skill>
+      <Skill icon="devicon:mongodb" href="https://www.mongodb.com">MongoDB</Skill>
+      <Skill icon="thesvg-color:nginx" href="https://nginx.org">nginx</Skill>
+      <Skill icon="selfhst:opnsense" href="https://opnsense.org">OPNsense</Skill>
+      <Skill icon="thesvg-color:portainer" href="https://www.portainer.io">Portainer</Skill>
+      <Skill icon="thesvg-color:teamspeak" href="https://www.teamspeak.com">Teamspeak</Skill>
+      <Skill icon="thesvg-color:traefik" href="https://traefik.io/traefik">Traefik Proxy</Skill>
+      <Skill icon="selfhst:truenas-scale" href="https://www.truenas.com">TrueNAS</Skill>
+      <Skill icon="selfhst:tvheadend" href="https://tvheadend.org">TvHeadend</Skill>
+      <Skill icon="selfhst:unbound" href="https://nlnetlabs.nl/projects/unbound/about">Unbound</Skill>
+      <Skill icon="selfhst:ubiquiti-unifi" href="https://ui.com">Unifi</Skill>
+      <Skill icon="thesvg-color:vaultwarden" href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</Skill>
+    </SkillBox>
 
-      <SkillBox title="Smarthome">
-        <Skill icon="selfhst:evcc" href="https://evcc.io">EVCC</Skill>
-        <Skill icon="thesvg-color:home-assistant" href="https://www.home-assistant.io">Home Assistant</Skill>
-        <Skill icon="thesvg-color:eclipse-mosquitto" href="https://mosquitto.org">Mosquitto</Skill>
-        <Skill icon="thesvg-color:zigbee2mqtt" href="https://www.zigbee2mqtt.io">Zigbee2MQTT</Skill>
-      </SkillBox>
-    </Section>
+    <SkillBox title="Smarthome">
+      <Skill icon="selfhst:evcc" href="https://evcc.io">EVCC</Skill>
+      <Skill icon="thesvg-color:home-assistant" href="https://www.home-assistant.io">Home Assistant</Skill>
+      <Skill icon="thesvg-color:eclipse-mosquitto" href="https://mosquitto.org">Mosquitto</Skill>
+      <Skill icon="thesvg-color:zigbee2mqtt" href="https://www.zigbee2mqtt.io">Zigbee2MQTT</Skill>
+    </SkillBox>
+  </Section>
 
-    <Divider />
+  <Divider />
 
-    <Section title="Lebenslauf">
-      <Timeline>
-        <!-- Grundschule -->
-        <TimelineEntry date="09/1994 - 07/1998">
-          <Link href="https://grundschuledaenischenhagen.de">Grundschule Dänischenhagen</Link>
-        </TimelineEntry>
-        <!-- Reaschule -->
-        <TimelineEntry date="09/1998 - 06/2004">
-          <Link href="https://www.gemeinschaftsschule-altenholz.de">Realschule Altenholz</Link>
-        </TimelineEntry>
-        <!-- Gymnasium -->
-        <TimelineEntry date="08/2004 - 06/2007">
-          <Link href="https://www.rbz-technik.de/vollzeitschule/berufliches-gymnasium">Berufliches Gymnasium - Fachrichtung Technik</Link>
-        </TimelineEntry>
-        <!-- Zivildienst -->
-        <TimelineEntry date="08/2007 - 04/2008">
-          Zivildienst beim <Link href="https://www.paritaet-sh.org">Paritätischen SH</Link>
-        </TimelineEntry>
-        <!-- Praktikum -->
-        <TimelineEntry date="05/2008 - 09/2008">
-          Praktikum bei der <Link href="https://www.consist.de">Consist Software Solutions GmbH</Link>
-        </TimelineEntry>
-        <!-- Studium -->
-        <TimelineEntry date="10/2008 - 09/2011">
-          Duales Studium zum B.Sc. (Wirtschaftsinformatik) an der <Link href="https://www.wak-sh.de">Wirtschaftsakademie Schleswig-Holstein</Link> in Kooperation
-          mit der <Link href="https://www.consist.de">Consist Software Solutions GmbH</Link>
-        </TimelineEntry>
-        <!-- Bader&Jene -->
-        <TimelineEntry date="10/2011 - 03/2014">
-          Softwareentwickler bei der <Link href="https://www.askdante.com/ueber-uns">Bader&amp;Jene Software-Ingenieurbüro GmbH</Link>
-        </TimelineEntry>
-        <!-- freenet -->
-        <TimelineEntry date="04/2014 - heute">
-          Softwareentwickler bei der <Link href="https://www.freenet.de">freenet DLS GmbH</Link>
-        </TimelineEntry>
-      </Timeline>
-    </Section>
-
-    <Divider />
-
-    <Section>
-      <div class="mt-4 flex flex-col justify-between gap-4 sm:flex-row">
-        <ContactButton icon="thesvg:github" href="https://github.com/PatrickGotthard">GitHub</ContactButton>
-        <ContactButton icon="thesvg:xing" href="https://www.xing.com/profile/Patrick_Gotthard">XING</ContactButton>
-        <ContactButton icon="heroicons:user-circle-solid" href="/impressum">Impressum</ContactButton>
-        <ContactButton icon="heroicons:finger-print-16-solid" href="/datenschutz">Datenschutz</ContactButton>
-      </div>
-    </Section>
-  </body>
-</html>
+  <Section title="Lebenslauf">
+    <Timeline>
+      <!-- Grundschule -->
+      <TimelineEntry date="09/1994 - 07/1998">
+        <Link href="https://grundschuledaenischenhagen.de">Grundschule Dänischenhagen</Link>
+      </TimelineEntry>
+      <!-- Reaschule -->
+      <TimelineEntry date="09/1998 - 06/2004">
+        <Link href="https://www.gemeinschaftsschule-altenholz.de">Realschule Altenholz</Link>
+      </TimelineEntry>
+      <!-- Gymnasium -->
+      <TimelineEntry date="08/2004 - 06/2007">
+        <Link href="https://www.rbz-technik.de/vollzeitschule/berufliches-gymnasium">Berufliches Gymnasium - Fachrichtung Technik</Link>
+      </TimelineEntry>
+      <!-- Zivildienst -->
+      <TimelineEntry date="08/2007 - 04/2008">
+        Zivildienst beim <Link href="https://www.paritaet-sh.org">Paritätischen SH</Link>
+      </TimelineEntry>
+      <!-- Praktikum -->
+      <TimelineEntry date="05/2008 - 09/2008">
+        Praktikum bei der <Link href="https://www.consist.de">Consist Software Solutions GmbH</Link>
+      </TimelineEntry>
+      <!-- Studium -->
+      <TimelineEntry date="10/2008 - 09/2011">
+        Duales Studium zum B.Sc. (Wirtschaftsinformatik) an der <Link href="https://www.wak-sh.de">Wirtschaftsakademie Schleswig-Holstein</Link> in Kooperation mit
+        der <Link href="https://www.consist.de">Consist Software Solutions GmbH</Link>
+      </TimelineEntry>
+      <!-- Bader&Jene -->
+      <TimelineEntry date="10/2011 - 03/2014">
+        Softwareentwickler bei der <Link href="https://www.askdante.com/ueber-uns">Bader&amp;Jene Software-Ingenieurbüro GmbH</Link>
+      </TimelineEntry>
+      <!-- freenet -->
+      <TimelineEntry date="04/2014 - heute">
+        Softwareentwickler bei der <Link href="https://www.freenet.de">freenet DLS GmbH</Link>
+      </TimelineEntry>
+    </Timeline>
+  </Section>
+</Layout>

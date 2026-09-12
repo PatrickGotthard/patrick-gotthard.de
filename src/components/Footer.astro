@@ -1,0 +1,16 @@
+---
+import Divider from "./Divider.astro";
+import FooterLink from "./FooterLink.astro";
+import Section from "./Section.astro";
+---
+
+<Divider />
+
+<Section>
+  <div class="mt-4 flex flex-col justify-between gap-4 sm:flex-row">
+    <FooterLink icon="thesvg:github" href="https://github.com/PatrickGotthard">GitHub</FooterLink>
+    <FooterLink icon="thesvg:xing" href="https://www.xing.com/profile/Patrick_Gotthard">XING</FooterLink>
+    <FooterLink icon="heroicons:user-circle-solid" href="/impressum">Impressum</FooterLink>
+    <FooterLink icon="heroicons:finger-print-16-solid" href="/datenschutz">Datenschutz</FooterLink>
+  </div>
+</Section>
